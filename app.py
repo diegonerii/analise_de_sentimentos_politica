@@ -8,10 +8,10 @@ from textblob import TextBlob
 class AnaliseSentimentos:
     def __init__(self):
         # Obter as chaves de acesso
-        __consumer_key = 'aaa'
-        __consumer_secret = 'bbb'
-        __access_token = 'ccc'
-        __access_token_secret = 'ddd'
+        __consumer_key = os.environ['consumer_key']
+        __consumer_secret = os.environ['consumer_secret']
+        __access_token = os.environ['access_token']
+        __access_token_secret = os.environ['access_token_secret']
 
         # Autenticar-se na API do Twitter
         auth = tweepy.OAuthHandler(__consumer_key, __consumer_secret)
