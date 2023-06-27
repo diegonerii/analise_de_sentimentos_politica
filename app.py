@@ -7,7 +7,7 @@ from textblob import TextBlob
 
 class AnaliseSentimentos:
     def __init__(self):
-        print("Hello World!")
+
         # Obter as chaves de acesso
         __consumer_key = os.environ['consumer_key']
         __consumer_secret = os.environ['consumer_secret']
